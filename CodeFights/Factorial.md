@@ -1,12 +1,17 @@
-/*
- Example
+# Factorial
 
- For n = 5, the output should be
+## Example
+
+```javascript
+ For n = 5, // the output should be
  factorial(n) = 120.
 
- Here 1 * 2 * 3 * 4 * 5 = 120.
- */
+ /*Here*/ 1 * 2 * 3 * 4 * 5 = 120.
+```
 
+### Answers
+
+```javascript
 function factorial(n) {
 	// If number is less than 0 reject.
 	if (n < 0) {
@@ -19,3 +24,5 @@ function factorial(n) {
 }
 
 factorial(5);
+
+```
