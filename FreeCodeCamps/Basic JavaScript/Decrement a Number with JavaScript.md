@@ -27,7 +27,7 @@ var myVar = 11;
 myVar = myVar - 1;
 ```
 
-### Response
+### Answers
 
 ```javascript
 var myVar = 11;

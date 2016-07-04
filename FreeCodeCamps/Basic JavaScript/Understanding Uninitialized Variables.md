@@ -7,7 +7,7 @@ If you concatenate a string with an undefined variable, you will get a literal s
 ## Instructions
  - Initialize the three variables a, b, and c with 5, 10, and "I am a" respectively so that they will not be undefined.
 
-### Response
+### Answers
 
 ```javascript
 // Initialize these three variables

@@ -23,7 +23,7 @@ Assigns 5 to myVar and then resolves myVar to 5 again and assigns it to myNum.
 - Assign the value 7 to variable a.
 - Assign the contents of a to variable b.
 
-### Response
+### Answers
 
 ```javascript
 // Setup

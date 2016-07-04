@@ -6,7 +6,16 @@ Creates a new variable called myVar and assigns it an initial value of 0.
 ## Instructions
 Define a variable a with var and initialize it to a value of 9.
 
-### Response
+### Before
+
+```javascript
+// Example
+var ourVar = 19;
+
+// Only change code below this line
+```
+
+### Answers
 
 ```javascript
 // Example

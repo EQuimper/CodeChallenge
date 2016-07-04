@@ -15,7 +15,7 @@ myVar = 5 + 10; // assigned 15
 ## Instructions
  - Change the 0 so that sum will equal 20.
  
-### Response
+### Answers
 
 ```javascript
 var sum = 10 + 10;

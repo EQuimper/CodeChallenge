@@ -24,7 +24,7 @@ var thisVariableNameIsTooLong;
  - Do not create any new variables.
  
 
-### Response
+### Answers
 
 ```javascript
 // Declarations

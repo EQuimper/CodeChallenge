@@ -30,7 +30,7 @@ b = 9 + b;
 c = c + 7;
 ```
 
-### Response
+### Answers
 
 ```javascript
 var a = 3;

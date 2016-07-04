@@ -19,7 +19,7 @@ myVar = 16 / 2; // assigned 8
 var quotient = 66 / 0;
 ```
 
-### Response 
+### Answers 
 
 ```javascript
 var quotient = 66 / 33;

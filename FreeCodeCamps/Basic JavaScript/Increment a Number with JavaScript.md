@@ -34,7 +34,7 @@ var myVar = 87;
 myVar++;
 ```
 
-### Response
+### Answers
 
 ```javascript
 var myVar = 87;

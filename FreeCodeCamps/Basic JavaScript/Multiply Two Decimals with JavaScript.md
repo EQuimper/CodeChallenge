@@ -15,7 +15,7 @@ Let's multiply two decimals together to get their product.
 var product = 2.0 * 0.0;
 ```
 
-### Response
+### Answers
 
 ```javascript
 var product = 2.0 * 2.5;

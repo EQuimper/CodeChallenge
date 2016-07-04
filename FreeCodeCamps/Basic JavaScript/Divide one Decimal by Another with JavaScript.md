@@ -11,7 +11,7 @@ Now let's divide one decimal by another.
 var quotient = 0.0 / 2.0;
 ```
 
-### Response
+### Answers
 
 ```javascript
 var quotient = 4.4 / 2.0;

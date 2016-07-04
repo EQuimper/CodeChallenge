@@ -35,7 +35,7 @@ but does not work properly with negative numbers.
 var remainder;
 ```
 
-### Response
+### Answers
 
 ```javascript
 // Only change code below this line

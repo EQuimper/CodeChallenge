@@ -22,7 +22,7 @@ Variable names can be made up of numbers, letters, and $ or _, but may not conta
 ## Hint
 Look at the ourName example if you get stuck.
 
-### Response
+### Answers
 
 ```javascript
 // Example

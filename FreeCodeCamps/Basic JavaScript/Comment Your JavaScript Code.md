@@ -16,7 +16,7 @@ your code—both for others and for your future self.
 ##Instructions
 Try creating one of each type of comment.
 
-### My Response
+### Answers
 
 ```javascript
 // This is single-line

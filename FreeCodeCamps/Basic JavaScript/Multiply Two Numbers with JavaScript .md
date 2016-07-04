@@ -19,7 +19,7 @@ myVar = 13 * 13; // assigned 169
 var product = 8 * 0;
 ```
 
-### Response
+### Answers
 
 ```javascript
 var product = 8 * 10;
