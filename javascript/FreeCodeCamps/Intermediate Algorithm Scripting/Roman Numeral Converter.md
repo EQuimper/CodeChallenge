@@ -68,3 +68,31 @@ function convertToRoman(num) {
 
 convertToRoman(36);
 ```
+
+New thinking using recursive
+
+```js
+var normalFormat = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
+
+var romanFormat = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
+
+function convertToRoman(num) {
+  if (num === 0) return '';
+
+  var value = '';
+
+  for (var i = 0; i < normalFormat.length; i++) {
+    if (num >= normalFormat[i]){
+      value = '';
+
+      value = romanFormat[i];
+    }
+  }
+
+  var index = romanFormat.indexOf(value);
+
+  var subValue = normalFormat[index];
+
+  return value + convertToRoman(num - subValue);
+}
+```
