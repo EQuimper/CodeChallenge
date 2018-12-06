@@ -18,22 +18,16 @@ sumAll([1, 4]);
 
 ```javascript
 function sumAll(arr) {
+  let biggerNumber = Math.max(...arr);
+  let smallerNumber = Math.min(...arr)
 
-  var newArr = [];
+  let total = biggerNumber + smallerNumber
 
-  var min = Math.min(arr[0], arr[1]);
-  var max = Math.max(arr[0], arr[1]);
-
-  for (var x = min; x <= max; x++) {
-    newArr.push(x);
+  for (let i = smallerNumber + 1; i < biggerNumber; i++) {
+    total += i
   }
 
-  var sum = newArr.reduce(function(prev, curr) {
-    return prev + curr;
-  });
-
-  return sum;
-
+  return total
 }
 
 sumAll([1, 4]);
@@ -41,7 +35,6 @@ sumAll([1, 4]);
 
 ### Thinking
 
-1. Create a empty who gonna receive the number between the min and max
-2. Find with both argument who is the max and who is the min
-3. Loop between both number and push it to the empty array
-4. Use `reduce()` who make for us the job of sum all the number
+1. Get the biggest and the smallest number;
+2. Create a var total who initialize with the biggestNumber sum to the smallest one
+3. Loop between between the range and add this to the total
