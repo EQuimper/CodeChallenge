@@ -43,22 +43,16 @@ checkObj("gift");
 ### Answers
 
 ```javascript
-// Setup
-var myObj = {
-  gift: "pony",
-  pet: "kitten",
-  bed: "sleigh"
-};
-
-function checkObj(checkProp) {
-  // Your Code Here
-  if (myObj.hasOwnProperty(checkProp)) return myObj[checkProp]; // If true return the prop
-
-  return "Not Found";
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+    if (obj.hasOwnProperty(checkProp)) {
+   return obj[checkProp];
+ } else {
+   return "Not Found";
+ }
+  // Only change code above this line
 }
 
-// Test your code by modifying these values
-checkObj("gift");
 ```
 
 ### Thinking
