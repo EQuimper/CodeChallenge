@@ -42,9 +42,8 @@ function fun2() {
 
 ### Answers
 
-```javascript
 // Declare your variable here
-var myGlobal = 10;
+let myGlobal = 10;
 
 function fun1() {
   // Assign 5 to oopsGlobal Here
@@ -61,5 +60,4 @@ function fun2() {
     output += " oopsGlobal: " + oopsGlobal;
   }
   console.log(output);
-
-```
+}
