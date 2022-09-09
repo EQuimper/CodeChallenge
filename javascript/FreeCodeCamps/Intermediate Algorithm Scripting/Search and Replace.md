@@ -14,23 +14,22 @@ NOTE: Preserve the case of the original word when you are replacing it. For exam
 
 ```js
 function myReplace(str, before, after) {
-  // create a variable who gonna contains the after var if need to be change
-  var nAfter;
-  // create a function who return a string with the first letter uppercase
-  function makeFirstUpperCase(s) {
-    return s.charAt(0).toUpperCase() + s.slice(1);
-  }
-  // check if the first letter of "before" is uppercase
-  if (before.charAt(0) === before.charAt(0).toUpperCase()) {
-    // if it's uppercase make the after variable first letter uppercase with the function we create.
-    nAfter = makeFirstUpperCase(after);
+  // Find index where before is on string
+  var index = str.indexOf(before);
+  // Check to see if the first letter is uppercase or not
+  if (str[index] === str[index].toUpperCase()) {
+    // Change the after word to be capitalized before we use it.
+    after = after.charAt(0).toUpperCase() + after.slice(1);
   } else {
-    // if not just return the variable
-    nAfter = after;
+    // Change the after word to be uncapitalized before we use it.
+    after = after.charAt(0).toLowerCase() + after.slice(1);
   }
-  // split the str with the word we want to replace and join that with the after variable
-  return str.split(before).join(nAfter);
+  // Now replace the original str with the edited one.
+  str = str.replace(before, after);
+
+  return str;
 }
 
+// test here
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 ```
