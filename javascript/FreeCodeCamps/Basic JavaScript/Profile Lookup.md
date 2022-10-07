@@ -101,7 +101,7 @@ function lookUpProfile(firstName, prop){
   for (var p in contacts) {
     if (contacts[p].firstName === firstName && contacts[p].hasOwnProperty(prop)) {
       msg = contacts[p][prop];
-    } else if (!contacts[p].hasOwnProperty(prop)) {
+    } else if (!contacts[p].hasOwnProperty(prop) && contacts[p].firstName === firstName) {
       msg = 'No such property';
     }
   }
