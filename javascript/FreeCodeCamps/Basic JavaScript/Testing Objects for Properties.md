@@ -16,49 +16,36 @@ myObj.hasOwnProperty("top");    // true
 myObj.hasOwnProperty("middle"); // false
 ```
 
+The first ```hasOwnProperty``` returns ```true```, while the second returns ```false```.
+
 ## Instructions
- - Modify the function `checkObj` to test `myObj` for `checkProp`. If
- the property is found, return that property's value. If not, return "Not Found".
+ - Modify the function `checkObj` to test if an object passed to the function (`obj`) contains a specific property (`checkProp`). 
+ If the property is found, return that property's value. If not, return `"Not Found"`.
 
 ### Before
 
 ```javascript
-// Setup
-var myObj = {
-  gift: "pony",
-  pet: "kitten",
-  bed: "sleigh"
-};
-
-function checkObj(checkProp) {
-  // Your Code Here
-
+function checkObj(obj, checkProp) {
+  // Only change code below this line
   return "Change Me!";
+  // Only change code above this line
 }
-
-// Test your code by modifying these values
-checkObj("gift");
 ```
 
 ### Answers
 
 ```javascript
-// Setup
-var myObj = {
-  gift: "pony",
-  pet: "kitten",
-  bed: "sleigh"
-};
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+if (obj.hasOwnProperty(checkProp)) { 
+  return obj[checkProp];
+} else {
 
-function checkObj(checkProp) {
-  // Your Code Here
-  if (myObj.hasOwnProperty(checkProp)) return myObj[checkProp]; // If true return the prop
-
-  return "Not Found";
+return "Not Found";
 }
 
-// Test your code by modifying these values
-checkObj("gift");
+  // Only change code above this line
+}
 ```
 
 ### Thinking
