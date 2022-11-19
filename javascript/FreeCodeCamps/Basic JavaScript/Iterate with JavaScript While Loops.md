@@ -14,11 +14,13 @@ while(i < 5) {
   i++;
 }
 ```
+In the code example above, the `while` loop will execute 5 times and append the numbers 0 through 4 to `ourArray`.
+
 
 Let's try getting a while loop to work by pushing values to an array.
 
 ## Instructions
- - Push the numbers 0 through 4 to `myArray` using a `while loop`.
+ - Add the numbers 5 through 0 (inclusive) in descending order to `myArray` using a `while` loop.
 
 ### Before
 
@@ -33,13 +35,16 @@ var myArray = [];
 
 ```javascript
 // Setup
-var myArray = [];
-var i = 0 ;
-while (i < 5) {
+const myArray = [];
+
+// Only change code below this line
+let i = 0;
+
+while (i < 6) {
   myArray.push(i);
   i++;
 }
-
-// Only change code below this line.
+myArray.reverse(myArray);
+console.log(myArray);
 ```
 
