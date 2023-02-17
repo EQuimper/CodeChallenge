@@ -31,15 +31,13 @@ var myArray = [];
 
 ### Answers
 
-```javascript
 // Setup
-var myArray = [];
-var i = 0 ;
-while (i < 5) {
-  myArray.push(i);
-  i++;
-}
+const myArray = [];
 
 // Only change code below this line.
-```
+let i = 5;
+while(i >= 0) {
+  myArray.push(i);
+  i--;
+}
 
