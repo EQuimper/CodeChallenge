@@ -47,6 +47,11 @@ function getMissingNumber(array) {
   return numberMissing;
 }
 
+
+
+
+
+
 function findMissingLetter(array) {
   const letterPosition = array.map(el => getLetterPosition(el));
 
@@ -55,3 +60,27 @@ function findMissingLetter(array) {
   return String.fromCharCode(numberMissing)
 }
 ```
+
+
+
+const missingLetter = (str) => {
+  let aphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKMNOPQRSTUVWXYZ";
+
+  let last = str[str.length - 1];
+  const subStr = aphabet.slice(
+    aphabet.indexOf(str[0]),
+    aphabet.indexOf(last) + 1
+  );
+
+  for (let i = 0; i < subStr.length; i++) {
+    let item = subStr[i];
+    if (!str.includes(item)) {
+      return item;
+    }
+  }
+
+  return "No missing letter";
+};
+
+console.log(missingLetter(["O", "Q", "R", "S"]));
+console.log(missingLetter(["a", "b", "c", "d", "f"]));
